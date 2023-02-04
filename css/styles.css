@@ -108,10 +108,11 @@ h1, h2, h3, h4, h5, h6, p{
   padding: 16px 32px 16px 32px;
   border: 0;
 }
-.btn:hover,
-.btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   color: var(--light-txt);
   background: var(--pressed-state-txt);
+
 }
 .hero {
   background-color: var(--hero-bg-color);
@@ -312,6 +313,11 @@ border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
+.portfolio-item:hover,
+.portfolio-item:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.8), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.8);
+}
 .img-set{
    width: 264px;
 
@@ -347,18 +353,21 @@ border-radius: 0px 0px 4px 4px;
   
  }
   .customers{
-  display: flex;
-  gap: 24px; 
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
+  padding-top: 130px;
   padding-bottom: 120px; 
  
   }
-/* .brend{
-
-
-} */
+.customers-title{
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+  color: var(--dark-txt);
+}
+.brends-list{
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
  
   .business-partner{
    display: flex; 
