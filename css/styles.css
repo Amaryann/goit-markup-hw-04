@@ -109,14 +109,13 @@ h1, h2, h3, h4, h5, h6, p{
   border: 0;
 }
 .modal-btn{
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover {
   color: var(--light-txt);
   background: var(--pressed-state-txt);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 .hero {
@@ -214,6 +213,9 @@ footer {
   letter-spacing: 0.02em;
   color: var(--body-txt);
   margin-top: 8px;
+  
+}
+.team-text{
   margin-bottom: 8px;
 
 }
@@ -315,9 +317,10 @@ border-radius: 0px 0px 4px 4px;
   border-width: 1px solid var(--accent-bg-color);
   flex-basis: calc((100% - 48px) / 3); 
   background: var(--light-txt);
+  border-radius: 4px;
+}
+.portfolio-item:hover{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-
 }
 .portfolio-item:hover,
 .portfolio-item:focus{
@@ -367,43 +370,41 @@ border-radius: 4px;
   padding-bottom: 120px; 
  
   }
-.customers-title{
-  font-size: 36px;
-  text-align: center;
-  line-height: calc(40 /36);
-  margin-bottom: 72px;
-  color: var(--dark-txt);
+.customers-item{
+  width: 168px; 
 }
-.brends-list{
+.customers-list{
+  gap: 24px; 
   display: flex;
-  gap: 24px;
-   
+ justify-content: center;
 }
-  .brends-list li{
-    border: 1px solid var(--customer-bg-img);
-   border-radius: 4px;
-   height: 88px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 168px;
-   align-content: center;
+ 
+  .brend{
+    fill: currentColor;
+
   }
   .business-partner{
-   display: flex; 
-   justify-content: center;
+ 
+   width: 168px;
+   height: 88px;
+   display: flex;
    color: var(--customer-bg-img);
-   }
+   border: 1px solid var(--customer-bg-img);
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   flex-wrap: wrap;
 
+  
+  
+  }
+ 
 .business-partner:hover,
 .business-partner:focus{
-  color: var(--pressed-state-txt);
- border-radius: 1px solid var(--pressed-state-txt); 
- stroke: var(--pressed-state-txt);
- stroke-width: 1px;
+ color: var(--pressed-state-txt);
  border-color: var(--pressed-state-txt);
-
-}
+ stroke: var(--pressed-state-txt);
+} 
 
 .footer-link:hover,
 .footer-link:focus{
@@ -412,7 +413,7 @@ border-radius: 4px;
 }
 .footer-link{
   display:flex;
-  /* margin: 8px; */
+  
 }
 .footer-text-social{
   color: #ffffff;
@@ -424,40 +425,34 @@ border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
  align-content: center;
- 
+ margin: 0;
+ margin-bottom: 16px; 
 
 } 
 .footer-actions{
   display: flex;
-  width: 40px;
-  height: 40px;
   gap: 16px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
   list-style-type: none;
   padding: 0;
-  margin-top: 16px;
-  justify-content: flex-end;
-
   
 }
 .footer-social{
-display: flex;
 width: 208px;
 height: 80px;
-justify-content: space-between;
+align-items: center;
 
 }
 .footer-link{
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--background-white);
+  
+}
+.footer-list{
+  margin-left: 120px;
 }
 .footer-container{
    display: flex; 
