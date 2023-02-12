@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Profile header-->
-    
+    <!--Profile header--> 
       <header class="header">
         <div class="container header-container">
         <nav class="nav">
@@ -27,11 +26,11 @@
             WEB<span class="studio">STUDIO</span>
           </a>
           <ul class="list">
-            <li><a class="nav-link link" href="./index.html">Studio</a></li>
+            <li><a class="nav-link current link" href="./index.html">Studio</a></li>
             <li>
-              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link current link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a class="nav-link link" href="">Contacts</a></li>
+            <li><a class="nav-link current link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
@@ -49,16 +48,14 @@
           </ul>
         </address>
       </div>
-    </div>
       </header>
     <!--Unique page content-->
     <main>
       <section class="hero section">
         <div class="container"><h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="btn" type="button">Order Service</button></div>
-        
+        <button class="btn" type="button" data-modal-open>Order Service</button></div> 
       </section>
-
+    </div>
       <section class="section">
         <div class="container"><h2 hidden>We are doing</h2>
         <ul class=" section-list list">
@@ -113,7 +110,7 @@
         </ul></div>
         
       </section>
-
+<!--  -->
       <section class="section future-item">
         <div class="container"><h2 class="section-title">What are we doing</h2>
         <ul class="section-list list">
@@ -467,5 +464,16 @@
   </div>
       <!--Footer-->
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+    <script src="./images/js/modal.js"></script>
   </body>
 </html>
